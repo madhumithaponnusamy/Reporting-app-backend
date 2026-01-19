@@ -1,0 +1,202 @@
+.whole {
+  width: 100%; 
+}
+
+
+.container {
+    width: 348px;
+    margin:  12px auto;
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgb(228, 231, 232);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.login {
+    width: 348px;
+    height: 387px;
+    padding: 10px 0px;
+
+}
+
+.insta-img {
+    text-align: center;
+    margin: 36px 0px 12px;
+}
+
+.form-division {
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    margin: 7px auto;
+    padding: 20px 0px 0px 0px;
+    gap: 8px;
+
+}
+
+input {
+    width: 258px;
+    height: 34px;
+    background-color: rgb(250, 250, 250);
+    font-size: 12px;
+    padding: 0px 0px 2px 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border: solid 1px rgb(218, 223, 224);
+    border-radius: 3px;
+}
+
+
+.email {
+    width: 259px;
+    height: 36px;
+
+}
+
+.log-in {
+    width: 268px;
+    height: 32px;
+    margin-right: 2px;
+}
+
+button {
+    width: 268px;
+    height: 32px;
+    background-color: rgba(74, 93, 249);
+    opacity: .7;
+    border: rgba(74, 93, 249);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    margin: 5px auto;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+.divider-flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px auto;
+}
+
+.divider-flex .line {
+    flex: 1;
+    height: 1px;
+    background-color: hsl(0deg 3% 88%)
+}
+
+.divider-flex .or {
+    white-space: nowrap;
+    font-weight: 500;
+    color: #666;
+    font-size: 13px;
+    padding: 0px 6px 0px 6px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.combine{
+    margin: 3px auto;  
+}
+
+.logo {
+    
+    display: flex;
+    padding-left: 4px;
+}
+
+.facebook {
+    color: rgb(0, 149, 246);
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    padding: 0px 0px 0px 8px;
+
+}
+
+.forgot-password {
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin: -6px auto;
+    padding-bottom: 5px;
+    font-size: 14px;
+
+}
+
+
+
+.down-part {
+    width: 348px;
+    height: 61px;
+    margin: -2px auto ;
+    border: solid 1px rgb(228, 231, 232);
+
+}
+
+.down {
+    text-align: center;
+    padding: 7px 0px  0px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app {
+    text-align: center;
+    margin:18px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+
+
+.goole-play {
+    width: 135px;
+    padding-top: 2px;
+}
+
+.Microsoft {
+    width: 111px;
+     padding-left: 3px;
+}
+.list-words{
+    margin: 77px auto 0px;
+}
+.lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    list-style-type: none;
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 0px 0px 0px 0px;
+}
+
+.last-part {
+    display: flex;
+    justify-content: center;
+    margin: 19px auto 50px;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 300px;
+    gap: 9px;
+}
+.last-part p{
+    margin: 0px;
+    
+}
+.text{
+    display: flex;
+}
+
+.first-word {
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 3px;
+    color: rgb(115, 115, 115);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}

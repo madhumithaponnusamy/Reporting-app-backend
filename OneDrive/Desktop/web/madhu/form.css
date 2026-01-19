@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 15px;
+}
+.info{
+     display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 15px;
+   background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    padding: 30px 80px;
+    border-radius: 20px;
+}
+input{
+     height: 4vh;
+     border-radius: 10px;
+}
+.add{
+    height: 5vh;
+}
+.nm{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width:30% ;
+    height: 5vh;
+    margin-left: 70px;
+}
+#favcolor{
+    width: 20%;
+}
+
+
+
+

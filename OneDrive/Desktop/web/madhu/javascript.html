@@ -1,0 +1,631 @@
+<script>
+    var tamil = 12
+    var english = 57
+    var maths = 79
+    var physics = 89
+    var chemistry = 69
+
+    function markTotal(tamil, english, maths, physics, chemistry) {
+
+        if (tamil < 35) {
+            console.log("Fail in Tamil")
+        }
+        if (english < 35) {
+            console.log("Fail in English")
+        }
+        if (maths < 35) {
+            console.log("Fail in Maths")
+        }
+        if (physics < 35) {
+            console.log("Fail in Physics")
+        }
+        if (chemistry < 35) {
+            console.log("Fail in Chemistry")
+        }
+
+        return tamil + english + maths + physics + chemistry
+    }
+    var result = markTotal(tamil, english, maths, physics, chemistry)
+    // console.log('result', result)
+
+
+
+
+    function compareABC(a, b, c) {
+        if (a < b) {
+            if (a < c) {
+                return a + " is small"
+            } else {
+                return c + " is small"
+            }
+        } else {
+            if (b < c) {
+                return b + " is small"
+            } else {
+                return c + " is small"
+            }
+        }
+    }
+
+
+    var a = 80
+    var b = 50
+    var c = 35
+    var d = 95
+
+    function find(a, b, c, d) {
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    return ("a is greater")
+                } else {
+                    return ("d is greater")
+                }
+            } else {
+                if (c > a) {
+                    return ("c is greater")
+
+                } else {
+                    return ("a is greater")
+                }
+            }
+        }
+
+    }
+
+
+    var result = find(a, b, c, d)
+    // console.log(result)
+
+
+
+    function findsmallnumber(a, b, c) {
+        if (a < b) {
+            if (a < c) {
+                return a + "is smaller"
+            } else {
+                return c + "is smaller"
+            }
+        } else {
+            if (b < c) {
+                return b + "is smaller"
+            } else {
+                return c + "is smaller"
+            }
+        }
+    }
+
+
+    var result = findsmallnumber(10000080, 5789643, 9075423)
+    // console.log(result)
+
+
+
+
+    function biggestnumber(a, b, c, d) {
+        if (a > b) {
+            if (a > c) {
+
+                if (a > d) {
+                    return ("a is greater")
+                } else {
+                    return ("d is greater")
+                }
+            } else {
+                if (c > d) {
+                    return ("c is greater")
+                } else {
+                    return ("d is greater")
+                }
+
+            }
+        } else {
+            if (b > c) {
+                if (b > d) {
+                    return ("b is greater")
+                } else {
+                    return (" d is greater")
+                }
+            } else {
+                if (c > d) {
+                    return ("c is greater")
+                } else {
+                    return (" d is greater")
+                }
+            }
+        }
+    }
+
+
+
+    var result = biggestnumber(8, 9, 506, 4500)
+    console.log("Result = " + result)
+
+
+    function findSmallNumber(arr) {
+        var smallNumber = arr[0]
+        for (i = 1; i < arr.length; i++) {
+            console.log(smallNumber, arr[i])
+            if (smallNumber > arr[i]) {
+                smallNumber = arr[i]
+            }
+        }
+        return smallNumber
+    }
+    findSmallNumber([1, 2, 2, 3, 4, 6, 7, 8, -10, 23, 4, 55, 66, -17, 77])
+
+
+
+
+    function findSmallNumber(a, b, c, d, e) {
+        var number1 = a < b ? a : b
+        var number2 = c < d ? c : d
+        var number3 = number1 < number2 ? number1 : number3
+        if (number3 < e) {
+            return number3
+        } else {
+            return e
+        }
+    }
+    findSmallNumber(0, -1, 22, -2, -200)
+
+
+    function findSmallNumber(arr) {
+        var smallNumber = arr[0]
+        for (i = 1; i < arr.length; i++) {
+            console.log(smallNumber, arr[i])
+            if (smallNumber > arr[i]) {
+                smallNumber = arr[i]
+            }
+        }
+        return smallNumber
+    }
+
+    function findSmallNumber(a, b, c, d, e) {
+        var number1 = a < b ? a : b
+        var number2 = c < d ? c : d
+        var number3 = number1 < number2 ? number1 : number3
+        if (number3 < e) {
+            return number3
+        } else {
+            return e
+        }
+    }
+
+    function findSmallNumber(a, b, c, d, e) {
+        var number1 = a < b ? a : b
+        var number2 = c < d ? c : d
+        if (number1 < number2) {
+            return number1
+        } else {
+            return number2
+        }
+    }
+
+    function findSmallNumber(a, b, c, d) {
+        var number1 = 0
+        var number2 = 0
+        if (a < b) {
+            number1 = a
+        } else {
+            number1 = b
+        }
+        if (c < d) {
+            number2 = c
+        } else {
+            number2 = d
+        }
+
+        if (number1 < number2) {
+            return number1
+        } else {
+            return number2
+        }
+    }
+
+    function findSmallNumber(a, b, c, d) {
+        var number1 = 0
+        var number2 = 0
+        if (a < b) {
+            number1 = a
+        } else {
+            number1 = b
+        }
+        if (c < d) {
+            number1 = a
+        } else {
+            number1 = b
+        }
+
+    }
+
+
+
+    function findNumber(arr) {
+        var find = arr[4]
+        for (i = 0; i < arr.length; i++) {
+            console.log(find, arr[i])
+            if (find == arr[i]) {
+                find = arr[i]
+            }
+        }
+        return find
+    }
+    findNumber(2, 3, 4, 5, 6, 7, 8, 90, 12, 34, 56)
+
+    //star nth time print pannum/
+
+    function star(lines) {
+        var result = ' '
+        for (var j = 0; j < lines; j++) {
+            for (k = 0; k <= j; k++) {
+                result = result + " * "
+            }
+            result = result + "\n"
+        }
+        console.log(result)
+    }
+    star(4)
+
+
+     function starsymbol(input){
+            var a =""
+            var b =" * "
+            for( var i=0; i<=input; i++){
+                result = a + b
+            }
+            console.log(result)
+        }
+        starsymbol(4)
+
+    //Loop vanthu 15 times run aagum/
+    for (var j = 0; j < 5; j++) {
+        for (k = 0; k <= j; k++) {
+            console.log("hi")
+        }
+    }
+
+    //loop 10 times run aagum/
+
+    for (var j = 0; j < 2; j++) {
+        for (k = 0; k < 5; k++) {
+            console.log("hi")
+        }
+    }
+
+
+    function largest(arr) {
+        for (i = 0; i < 10; i++) {
+            console.log("hello!")
+        }
+    }
+
+
+    function printnumbers() {
+        var result = ""
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < i; j++) {
+                console.log()
+            }
+        }
+    }
+
+
+
+    function findNumber(input) {
+        var result = ""
+        for (var i = 0; i <= input; i++) {
+            for (j = 0; j < i; j++) {
+                result = result + i
+            }
+            console.log(result)
+        }
+    }
+    findNumber(6)
+
+
+
+
+
+    var result = 1
+    var input = 5
+
+    for (var i = 1; i <= input; i++) {
+        console.log(i, result)
+        result = result * i
+        console.log(result)
+    }
+    console.log(result)
+
+
+
+
+
+
+    function test(input) {
+        for (var i = input; i >= 1; i--) {
+            console.log(i)
+        }
+    }
+    test(5)
+
+
+
+
+    function printnumbers(input) {
+        for (var i = 1; i <= input; i++) {
+            console.log(i)
+        }
+    }
+    printnumbers(100)
+
+
+    function printnumbers(input) {
+        for (var i = input; i >= 1; i--) {
+            console.log(i)
+        }
+    }
+    printnumbers(100)
+
+
+
+    function oddnumbers(input) {
+        for (var i = 0; i <= input; i += 2) {
+            console.log(i)
+        }
+    }
+
+    oddnumbers(100)
+
+    function evennumbers(input) {
+        for (var i = 1; i <= input; i += 2) {
+
+            console.log(i)
+        }
+
+    }
+
+
+    evennumbers(100)
+
+    function reverseeven(input) {
+        for (var i = input; i >= 0; i -= 2) {
+
+            console.log(i)
+        }
+
+    }
+
+
+    reverseeven(100)
+
+    function reverseodd(input) {
+        for (var i = input; i >= 1; i -= 2) {
+
+            console.log(i)
+        }
+
+    }
+
+
+    reverseodd(99)
+
+
+
+    function fivenumbers() {
+        for (i = 1; i <= 7; i += 2) {
+            console.log(i)
+        }
+    }
+
+    fivenumbers()
+
+    function fournumbers() {
+        for (i = 2; i <= 8; i += 2) {
+            console.log(i)
+        }
+    }
+
+    fournumbers()
+
+
+    function fibonacci(input) {
+        var result = 0
+        for (var i = 0; i <= input; i++) {
+            result = result + i
+            console.log(result)
+        }
+    }
+    fibonacci(5)
+
+
+    function fibonacci(input) {
+        var result = 0
+       
+        for (var i = 0; i <= input; i++ ) {
+           result = result +=i
+            console.log(result)
+        } 
+    }
+    fibonacci(9)
+
+        
+    function multipletables(){
+        for(i=0;i<=10;i++){
+        for(j=1;j<=i;j++){
+            console.log()
+        }
+        }
+    }
+    multipletables()
+
+
+    function sumofoddnumbers(){
+        result=0
+        for(var i=1;i<=100;i+=2){
+    
+            result=result+i
+            console.log(result)
+        }
+    }
+    
+    sumofoddnumbers()
+
+
+    function sumofnumbers(){
+        var a=1
+        for(var i=0;i<=100;i++){
+            result = a+i
+            console.log(result)
+        }
+    }
+    sumofnumbers()
+
+    function stars(lines){
+        var result = " "
+        var coloumns = lines + lines-1
+        for(var i=1;i<=lines; i++){
+            for(let space = 1; space<=lines-1;space++){
+                result += "";
+            }
+        for(var star=1 
+        ;star<=2*i-1; star++){
+            result+="*"
+        }
+        result = result + "\n"
+        }
+        console.log(result)
+    }
+    stars(4)
+
+     function stars(lines){
+        var result = " "
+        var coloumns = lines + lines-1
+        for(var i=1;i<=lines; i++){
+            for(let space = 1; space<=lines-1;space++){
+                result += "";
+            }
+        for(var star=1;star<=i; star++){
+            result+=" * "
+        }
+        result = result + "\n"
+        }
+        console.log(result)
+    }
+    stars(4)
+
+
+
+
+
+
+const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+var result=apple;
+for (var i =0; i<=fruits.length;i++){
+    if(fruits[i]==result){
+        count++
+    }
+
+}
+console.log("total apples:",count)
+
+
+function reverseWord(word) {
+    const wordArr = []
+    const wordLength = word.length
+    const loopCount = Math.ceil(wordLength/2)
+    for (var i=0; i< loopCount; i++){
+        var pos1 = i
+        var pos2 = wordLength - (i + 1)
+        wordArr[pos1] = word[pos2]
+        wordArr[pos2] = word[pos1]
+    }
+    return wordArr.join('')
+}
+
+function isPalindrome1(word){
+    var reverseWord = word.split("").reverse().join("")
+    return word === reverseWord
+}
+isPalindrome1("malayalam")
+
+
+   
+
+
+
+
+     function ispalindrome(data){
+        var datalength = data.length
+        var loop = Math.ceil(datalength/2)
+        for(var i =0;i<loop;i++){
+            var pos1 = i;
+            var pos2 = datalength - (i+1)
+            console.log(pos1, pos2)
+        }
+    }
+
+//     m m
+//  a a
+//  l l
+//  a a
+//  y y
+    ispalindrome("malayalam")
+
+     function ispalindrome(data){
+        var datalength = data.length
+        var loop = Math.ceil(datalength/2)
+        for(var i =0;i<loop;i++){
+            var pos1 = i;
+            var pos2 = datalength - (i+1)
+            console.log(data[pos1], data[pos2])
+        }
+    }
+    ispalindrome("malayalam")
+
+//     a i
+//  b h
+//  c g
+//  d f
+//  e e
+
+      function ispalindrome(data){
+        var datalength = data.length
+        var loop = Math.ceil(datalength/2)
+        for(var i =0;i<loop;i++){
+            var pos1 = i;
+            var pos2 = datalength - (i+1)
+            if(data[pos1] !== data[pos2]) {
+                return false
+            }
+        }
+      return true
+    }
+    ispalindrome("malayalam")
+//     true
+//     ispalindrome("malayblam")
+
+// false
+//      ispalindrome("mom")
+
+
+
+function isPalindrome(word){
+    var a = word.split().reverse().join();
+    var wordlength = word.length
+      var loopcount = Math.ceil(wordlength/2)
+      for(var i = 0; i<loopcount; i++){
+        var result1 = i
+        var result2 = wordlength - (i + 1)
+         if(word[result1] == word[result2]){
+            return "true"
+         }else{
+            return "false"
+         }
+      } 
+}
+isPalindrome("malayalam")`
+
+</script>
+
+</html>

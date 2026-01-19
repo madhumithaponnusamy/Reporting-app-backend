@@ -1,0 +1,171 @@
+body {
+    margin: 0px auto;
+    background-color: rgb(37 45 53);
+
+}
+
+.container {
+    width: 600px;
+    height: 650px;
+    margin: 40px auto 0px;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.logo {
+    height: 53px;
+    margin: auto;
+    padding-right: 33px;
+
+
+}
+
+.twitter-logo {
+    width: 32px;
+    height: 53px;
+    fill: currentcolor;
+
+}
+
+.cancel-button {
+    /* width: 34px; */
+    fill: currentcolor;
+
+}
+
+.cross-symbol {
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 16px 0px 0px 16px;
+}
+
+.account-coloumn {
+    width: 438px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    color: white;
+
+}
+
+h1 {
+    margin: 15px 0px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+
+input {
+    width: 429px;
+    height: 56px;
+    background-color: black;
+    border: 1px solid rgb(51, 54, 57);
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 0px 0px 0px 8px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   
+}
+
+::placeholder{
+    color: rgb(111, 115, 118);
+}
+.Box-1{
+        padding: 16px 0px 0px 0px;
+}
+
+.Box-2 {
+
+     padding: 28px 0px 0px 0px;
+}
+
+.Birthdate {
+    color: white;
+        margin: 36px 0px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Db {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.para {
+   color: rgb(113, 118, 123);
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    /* line-height: 5px; */
+    margin: 6px 0px 0px 0px;
+}
+p{
+    margin: 0px;
+    
+}
+
+
+.month {
+       width: 200px;
+    /* height: 56px; */
+    padding: 4px 0px 34px 4px;
+    background-color: black;
+    color: rgb(113, 118, 123);
+    border-radius: 4px;
+    border: 1px solid rgb(51, 54, 57);
+    font-family:TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    font-size: 13px;
+    flex-grow: 2;
+}
+
+.day {
+    width: 86px;
+    padding: 4px 0px 34px 4px;
+    background-color: black;
+    color: rgb(113, 118, 123);
+    border-radius: 4px;
+    border: 1px solid rgb(51, 54, 57);
+    font-family:TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    font-size: 13px;
+}
+
+.year {
+    width: 109px;
+    padding: 4px 0px 34px 4px;
+    background-color: black;
+    color: rgb(113, 118, 123);
+    border-radius: 4px;
+    border: 1px solid rgb(51, 54, 57);
+    font-family:TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif ;
+    font-size: 13px;
+
+}
+
+.button {
+        margin: 124px auto 0px;
+}
+
+.btn {
+    width: 440px;
+    height: 52px;
+    background-color: grey;
+    color: black;
+    border-radius: 9999px;
+    border: gray;
+    font-size: 17px;
+    font-weight: 700;
+
+}
