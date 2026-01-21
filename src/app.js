@@ -38,6 +38,9 @@ locationRoutes.setupRoutes(app,auth);
 const issueModule  = require("./modules/issue/issue.controller")
 issueModule.setupRoutes(app);
 
+app.get("/", (req, res) => {
+  res.send("Backend is live");
+});
 
 
 // Start server (PORT from env or 5000)
