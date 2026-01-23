@@ -81,7 +81,7 @@ async function updateIssueStatus(req, res) {
   const { id } = req.params;
   const { status } = req.body;
 
-  const allowed = ["pending", "in_progress", "resolved"];
+  const allowed = ["pending", "inProgress", "resolved"];
   if (!allowed.includes(status)) {
     return res.status(400).json({ message: "Invalid status" });
   }
@@ -103,7 +103,7 @@ function setupRoutes(app) {
   app.get("/api/admin/dashboard", auth, dashboardStats);
   app.get("/api/admin/users", auth, listUsers);
 
-  app.get("/api/admin/issues", auth, listAllIssues);
+  app.get("/api/admin/issues", auth, adminOnly, listAllIssues);
 
   app.put("/api/admin/issues/:id/status", auth, adminOnly, updateIssueStatus);
 
