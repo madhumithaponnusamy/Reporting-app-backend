@@ -1,21 +1,22 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const db = require("./db/db"); 
-
 
 const app = express();
+const db = require("./db/db"); 
+
 
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin:"https://reporting-app-react-production.up.railway.app",
     credentials: true
   })
 );
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
-const httpLogger = require("../src/modules/utils/logger");
+const httpLogger = require("./modules/utils/logger");
 
 app.use(httpLogger);
 
@@ -44,13 +45,15 @@ const issueModule  = require("./modules/issue/issue.controller")
 issueModule.setupRoutes(app);
 
 
-
-// Start server (PORT from env or 5000)
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Backend running on port ${PORT}`);
+app.get("/", (req, res) => {
+  res.send("Backend is live");
 });
 
+
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT,'0.0.0.0', () => {
+  console.log(`Backend running on port ${PORT}`);
+});
 
 
