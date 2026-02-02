@@ -6,13 +6,24 @@ const app = express();
 const db = require("./db/db"); 
 
 
-// Middlewares
+const allowedOrigins = [
+  "http://localhost:5173", // local dev
+  "https://reporting-app-react-production.up.railway.app" // production
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: function(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS not allowed"));
+      }
+    },
     credentials: true
   })
 );
+
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
@@ -44,15 +55,15 @@ locationRoutes.setupRoutes(app,auth);
 const issueModule  = require("./modules/issue/issue.controller")
 issueModule.setupRoutes(app);
 
+
 app.get("/", (req, res) => {
   res.send("Backend is live");
 });
 
 
-// Start server (PORT from env or 5000)
 const PORT = process.env.PORT || 8080;
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT,'0.0.0.0', () => {
   console.log(`Backend running on port ${PORT}`);
 });
 
