@@ -6,13 +6,24 @@ const app = express();
 const db = require("./db/db"); 
 
 
-// Middlewares
+const allowedOrigins = [
+  "http://localhost:5173", // local dev
+  "https://reporting-app-react-production.up.railway.app" // production
+];
+
 app.use(
   cors({
-    origin:"https://reporting-app-react-production.up.railway.app",
+    origin: function(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS not allowed"));
+      }
+    },
     credentials: true
   })
 );
+
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
